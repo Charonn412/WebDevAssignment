@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bloom Valley Nursery | Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your Bloom Valley Nursery cart, adjust quantities, and finalize your plant selections.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="cart">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/Client1_AppleTree.png" alt="Bloom Valley Nursery logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Bloom Valley Nursery</span>
+          <span class="brand-tagline">Cultivating beauty, one garden at a time</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="cart.html" class="nav-link nav-cta current">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero-soft">
+      <div class="hero-content">
+        <h1>Your Cart</h1>
+        <p>Review your selections before you call or visit to complete your order.</p>
+      </div>
+    </section>
+
+    <section class="section section-cart" aria-labelledby="cart-heading">
+      <div class="section-header">
+        <h2 id="cart-heading">Selected Plants & Arrangements</h2>
+        <p>We will happily hold your selections for 24 hours when you call to confirm availability.</p>
+      </div>
+
+      <div class="cart-layout">
+        <div class="cart-main">
+          <div class="table-scroll">
+            <table class="cart-table" aria-describedby="cart-heading">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                  <th scope="col"><span class="visually-hidden">Remove item</span></th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <!-- Cart items populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          <p id="cart-empty-message" class="muted" aria-live="polite"></p>
+        </div>
+
+        <aside class="cart-summary" aria-label="Order summary">
+          <div class="summary-card">
+            <h3>Cart Summary</h3>
+            <dl class="summary-list">
+              <div class="summary-row">
+                <dt>Subtotal</dt>
+                <dd id="cart-subtotal">$0.00</dd>
+              </div>
+              <div class="summary-row">
+                <dt>Estimated tax</dt>
+                <dd id="cart-tax">$0.00</dd>
+              </div>
+              <div class="summary-row summary-row-total">
+                <dt>Estimated total</dt>
+                <dd id="cart-total">$0.00</dd>
+              </div>
+            </dl>
+            <button id="clear-cart-btn" class="btn btn-outline btn-block" type="button">Clear Cart</button>
+            <p class="muted small">To complete your purchase, call us with your cart details or visit the nursery in person.</p>
+            <p class="small">Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+          </div>
+        </aside>
+      </div>
+
+      <p id="cart-message" class="form-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <h3>Bloom Valley Nursery</h3>
+        <p>Thoughtfully curated plants, custom designs, and a welcoming space for everyone who loves to grow.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Visit Us</h3>
+        <p>1247 Greenway Lane<br>Bloom Valley, CA 94021</p>
+      </div>
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <p>
+          Phone: <a href="tel:+15551234567">(555) 123-4567</a><br>
+          Email: <a href="mailto:hello@bloomvalleynursery.com">hello@bloomvalleynursery.com</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="footer-year"></span> Bloom Valley Nursery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bloom Valley Nursery | Product Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Bloom Valley Nursery’s curated gallery of plants, arrangements, and garden essentials.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/Client1_AppleTree.png" alt="Bloom Valley Nursery logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Bloom Valley Nursery</span>
+          <span class="brand-tagline">Cultivating beauty, one garden at a time</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="gallery.html" class="nav-link current">Gallery</a></li>
+          <li><a href="community.html" class="nav-link">Community</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="cart.html" class="nav-link nav-cta">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero-soft">
+      <div class="hero-content">
+        <h1>Product Gallery</h1>
+        <p>Explore a curated selection of plants and arrangements ready to brighten your home and garden.</p>
+        <div class="hero-actions">
+          <a href="#gallery-section" class="btn btn-primary">Browse Collections</a>
+          <a href="cart.html" class="btn btn-ghost">View Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery-section" class="section section-gallery" aria-labelledby="gallery-heading">
+      <div class="section-header">
+        <h2 id="gallery-heading">Nursery Collections</h2>
+        <p>Thoughtfully organized so you can easily compare sizes, styles, and prices.</p>
+      </div>
+
+      <div class="product-layout">
+        <div class="product-grid">
+          <article class="product-card" data-product-id="1">
+            <img src="images/Client1_AppleTree.png" alt="Blushing peony arrangement in a ceramic pot" class="product-image">
+            <div class="product-body">
+              <h3>Blushing Peony Mix</h3>
+              <p class="product-description">Soft pink blossoms with lush foliage, ideal for entry tables and covered porches.</p>
+              <p class="product-meta">Light: Partial sun • Water: Moderate</p>
+              <p class="product-price">$38.00</p>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="2">
+            <img src="images/Client1_AppleTree.png" alt="Set of three leafy green houseplants in white planters" class="product-image">
+            <div class="product-body">
+              <h3>Evergreen Houseplant Trio</h3>
+              <p class="product-description">A trio of easy-care plants that bring calming greenery to desks, shelves, or side tables.</p>
+              <p class="product-meta">Light: Indirect • Water: Low</p>
+              <p class="product-price">$54.00</p>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="3">
+            <img src="images/Client1_AppleTree.png" alt="Stone bowl filled with colorful succulent varieties" class="product-image">
+            <div class="product-body">
+              <h3>Sunset Succulent Garden</h3>
+              <p class="product-description">A mix of sculptural succulents arranged to highlight color and texture in bright spaces.</p>
+              <p class="product-meta">Light: Full sun • Water: Low</p>
+              <p class="product-price">$42.00</p>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-product-id="4">
+            <img src="images/Client1_AppleTree.png" alt="Assorted flowering plants in a wooden crate" class="product-image">
+            <div class="product-body">
+              <h3>Cottage Garden Crate</h3>
+              <p class="product-description">A charming mix of seasonal blooms ready to be planted into your garden beds or window boxes.</p>
+              <p class="product-meta">Light: Full sun • Water: Moderate</p>
+              <p class="product-price">$65.00</p>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" type="button">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+
+        <aside class="product-table-wrapper" aria-label="Product comparison table">
+          <h3>Compare at a Glance</h3>
+          <div class="table-scroll">
+            <table class="product-table">
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Light</th>
+                  <th scope="col">Water</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Blushing Peony Mix</th>
+                  <td>Partial sun</td>
+                  <td>Moderate</td>
+                  <td>$38.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Evergreen Houseplant Trio</th>
+                  <td>Indirect</td>
+                  <td>Low</td>
+                  <td>$54.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sunset Succulent Garden</th>
+                  <td>Full sun</td>
+                  <td>Low</td>
+                  <td>$42.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cottage Garden Crate</th>
+                  <td>Full sun</td>
+                  <td>Moderate</td>
+                  <td>$65.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted">Use the table to quickly find the right plants for your light conditions and watering preferences.</p>
+        </aside>
+      </div>
+
+      <p id="gallery-message" class="form-message" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <h3>Bloom Valley Nursery</h3>
+        <p>Thoughtfully curated plants, custom designs, and a welcoming space for everyone who loves to grow.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Visit Us</h3>
+        <p>1247 Greenway Lane<br>Bloom Valley, CA 94021</p>
+      </div>
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <p>
+          Phone: <a href="tel:+15551234567">(555) 123-4567</a><br>
+          Email: <a href="mailto:hello@bloomvalleynursery.com">hello@bloomvalleynursery.com</a>
+        </p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; <span id="footer-year"></span> Bloom Valley Nursery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
